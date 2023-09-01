@@ -1,3 +1,4 @@
+//Using Creation Pattern
 class Product{
   constructor(name, description,price, buyAmount){
     this.name = name;

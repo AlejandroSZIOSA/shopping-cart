@@ -6,7 +6,6 @@ function ShoppingScreen(){
       <Text style={styles.text}> Shopping Screen </Text>
     </View>
   );
-
 }
 export default ShoppingScreen;
 

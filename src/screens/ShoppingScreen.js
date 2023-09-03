@@ -1,4 +1,4 @@
-import { View,StyleSheet,Text, FlatList,SafeAreaView } from "react-native";
+import { View,StyleSheet,Text, FlatList,SafeAreaView,Platform } from "react-native";
 import { PRODUCTS } from "../data/dummy-data";
 import ProductRowTile from "../components/ProductRowTile";
 
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   textContainer: {
     backgroundColor:'red',
     padding:10,
-    marginTop:30,
+    marginTop:Platform.select({ios:0,android:40}), //Using Platform API
     marginBottom:10,
   },
 

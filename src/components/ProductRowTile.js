@@ -1,4 +1,4 @@
-import { View,Text,StyleSheet } from "react-native";
+import { View,Text,StyleSheet} from "react-native";
 // Props keyword helps :)
 function ProductRowTile(props) {
   //console.log(props);
@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     height:200,
     width:350,
     borderRadius:10,
-
     backgroundColor:'blue'
     }
 

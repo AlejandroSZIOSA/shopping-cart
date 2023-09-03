@@ -1,4 +1,4 @@
-import { View,Text,StyleSheet} from "react-native";
+import { View,Text,StyleSheet, Button} from "react-native";
 // Props keyword helps :)
 function ProductRowTile(props) {
   //console.log(props);
@@ -9,6 +9,12 @@ function ProductRowTile(props) {
       </View>
       <View>
         <Text> {props.price} </Text>
+      </View>
+      <View>
+        <Button title='Description'/>
+      </View>
+      <View>
+        <Button title='To Cart'/>
       </View>
     </View>
   );

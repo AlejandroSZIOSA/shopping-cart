@@ -1,6 +1,6 @@
 import { View,StyleSheet,Text, FlatList,SafeAreaView,Platform } from "react-native";
 import { PRODUCTS } from "../data/dummy-data";
-import ProductRowTile from "../components/cardviews/ProductRowTile";
+import ProductRowTile from "../components/cardviews/product-list/ProductRowTile";
 
 //Function renders a product item and takes PRODUCTS data as a parameter :)
 function renderProductItem(itemData){

@@ -3,28 +3,24 @@ import { PRODUCTS } from "../data/dummy-data";
 import ProductRowTile from "../components/ProductRowTile";
 
 //Function renders a product item
-function renderCategoryItem(itemData){
+function renderProductItem(itemData){
+  //console.log(itemData.)
   return (
     <ProductRowTile 
-      title={itemData.item.name} 
-      //price={itemData.item.price}
+      name={itemData.item.name} 
+      price={itemData.item.price}
     />
   )
 }
 
 function ShoppingScreen(){
-  return(
-    <View>
-      <Text style={styles.text}> Shopping Screen </Text>
-        
+  return(   
           <FlatList
             data={PRODUCTS}
-            keyExtractor={(item) => { item.id}}
-            renderItem={renderCategoryItem}
-            //numColumns={2} // can change this :)
+            keyExtractor={(item) => item.id}
+            renderItem={renderProductItem}
+            numColumns={0} // can change this to 2 :)
           />
-        
-    </View>
   );
 }
 export default ShoppingScreen;

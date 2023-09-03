@@ -2,7 +2,7 @@ import { View,StyleSheet,Text, FlatList } from "react-native";
 import { PRODUCTS } from "../data/dummy-data";
 import ProductRowTile from "../components/ProductRowTile";
 
-//Function renders a product item
+//Function renders a product item and takes PRODUCTS data as a parameter :)
 function renderProductItem(itemData){
   //console.log(itemData.)
   return (

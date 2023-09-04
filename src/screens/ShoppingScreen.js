@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
   containerSafeAreas: {
     flex: 1,
   },
-
   textContainer: {
     backgroundColor:'red',
     padding:10,

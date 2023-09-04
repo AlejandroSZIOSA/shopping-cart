@@ -5,11 +5,11 @@ function ProductRowTile(props) {
   //console.log(props);
   return(
     <View style={styles.rowItem}>
-      <View>
-        <Text> {props.name} </Text>
+      <View style = {styles.productNameContainer}>
+        <Text style={styles.productNameText}> {props.name} </Text>
       </View>
-      <View>
-        <Text> {props.price} </Text>
+      <View style={styles.productPriceContainer}>
+        <Text style={styles.productPriceText}> Price =  {props.price} SEK </Text>
       </View>
         <DescriptionBtn/>
       <View>
@@ -30,6 +30,17 @@ const styles = StyleSheet.create({
     width:350,
     borderRadius:10,
     backgroundColor:'blue'
-    }
-
+    },
+    productNameContainer: {
+      padding:5,
+    },
+    productNameText:{
+      fontSize:30,
+    },
+    productPriceContainer: {
+      
+    },
+    productPriceText:{
+      fontSize:15,
+    },
 });

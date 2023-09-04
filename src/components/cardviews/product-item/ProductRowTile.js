@@ -1,4 +1,5 @@
 import { View,Text,StyleSheet, Button} from "react-native";
+import DescriptionBtn from "./DescriptionBtn";
 // Props keyword helps :)
 function ProductRowTile(props) {
   //console.log(props);
@@ -10,9 +11,7 @@ function ProductRowTile(props) {
       <View>
         <Text> {props.price} </Text>
       </View>
-      <View>
-        <Button title='Description'/>
-      </View>
+        <DescriptionBtn/>
       <View>
         <Button title='To Cart'/>
       </View>
@@ -25,6 +24,7 @@ export default ProductRowTile;
 const styles = StyleSheet.create({
   rowItem:{
     //flex: 1,
+    alignItems: 'center',
     margin:5,
     height:200,
     width:350,

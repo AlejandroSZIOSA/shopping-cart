@@ -1,5 +1,6 @@
 import { View,Text,StyleSheet, Button} from "react-native";
 import DescriptionBtn from "./btn/DescriptionBtn";
+import BuyBtn from "./btn/BuyBtn";
 // Props keyword helps :)
 function ProductRowTile(props) {
 
@@ -16,9 +17,9 @@ function ProductRowTile(props) {
         <Text style={styles.productPriceText}> Price =  {props.price} SEK </Text>
       </View>
         {/* Using 'props' onPress keyword */}
-        <DescriptionBtn onPress={onPressed}/>
+        <DescriptionBtn onPress={onPressed}> Description </DescriptionBtn>
       <View>
-        <Button title='To Cart'/>
+        <BuyBtn/>
       </View>
     </View>
   );

@@ -1,12 +1,13 @@
 import { View,Text,Pressable,StyleSheet } from "react-native";
 // Using 'Props' keyword for onPress
-function DescriptionBtn(props){
+//'Props' keyword can not use when I am Using children
+function DescriptionBtn({children, onPress}){
 return(
   <View style={styles.container}>
     <Pressable
-      onPress={props.onPress}
+      onPress={onPress}
     >
-      <Text style={styles.textStyle}> Description</Text>
+      <Text style={styles.textStyle}> {children}</Text>
     </Pressable>
   </View>
 );
@@ -16,8 +17,8 @@ export default DescriptionBtn;
 
 const styles= StyleSheet.create({
   container:{
-    padding:10,
-    margin:20,
+    padding:8,
+    margin:15,
     borderRadius:20,
     backgroundColor:'black',
   },

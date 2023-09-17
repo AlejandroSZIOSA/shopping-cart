@@ -1,16 +1,10 @@
 import { View,Text,Pressable,StyleSheet } from "react-native";
-
-function DescriptionBtn(){
-
-  function onPressed() {
-    console.log("pressed2")
-
-  }
-
+// Using 'Props' keyword for onPress
+function DescriptionBtn(props){
 return(
   <View style={styles.container}>
     <Pressable
-      onPress={onPressed}
+      onPress={props.onPress}
     >
       <Text style={styles.textStyle}> Description</Text>
     </Pressable>

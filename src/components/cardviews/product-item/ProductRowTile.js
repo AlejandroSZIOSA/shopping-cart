@@ -1,8 +1,12 @@
 import { View,Text,StyleSheet, Button} from "react-native";
-import DescriptionBtn from "./DescriptionBtn";
+import DescriptionBtn from "./btn/DescriptionBtn";
 // Props keyword helps :)
 function ProductRowTile(props) {
-  //console.log(props);
+
+  function onPressed() {
+    console.log("descriptionBtn")
+  }
+
   return(
     <View style={styles.rowItem}>
       <View style = {styles.productNameContainer}>
@@ -11,7 +15,8 @@ function ProductRowTile(props) {
       <View style={styles.productPriceContainer}>
         <Text style={styles.productPriceText}> Price =  {props.price} SEK </Text>
       </View>
-        <DescriptionBtn/>
+        {/* Using 'props' onPress keyword */}
+        <DescriptionBtn onPress={onPressed}/>
       <View>
         <Button title='To Cart'/>
       </View>

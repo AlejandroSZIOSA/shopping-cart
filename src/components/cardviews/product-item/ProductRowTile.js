@@ -4,8 +4,11 @@ import BuyBtn from "./btn/BuyBtn";
 // Props keyword helps :)
 function ProductRowTile(props) {
 
-  function onPressed() {
-    console.log("descriptionBtn")
+  function onPressedDescription() {
+    console.log("Description Btn")
+  }
+  function onPressedBuy() {
+    console.log("Buy Btn")
   }
 
   return(
@@ -17,9 +20,9 @@ function ProductRowTile(props) {
         <Text style={styles.productPriceText}> Price =  {props.price} SEK </Text>
       </View>
         {/* Using 'props' onPress keyword */}
-        <DescriptionBtn onPress={onPressed}> Description </DescriptionBtn>
+        <DescriptionBtn onPress={onPressedDescription}> Description </DescriptionBtn>
       <View>
-        <BuyBtn/>
+        <BuyBtn onPress={onPressedBuy}> Buy </BuyBtn>
       </View>
     </View>
   );

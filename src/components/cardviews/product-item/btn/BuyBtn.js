@@ -1,10 +1,12 @@
 import { Pressable, StyleSheet, View,Text } from "react-native";
 
-function BuyBtn(){
+function BuyBtn({children,onPress}){
   return(
     <View style={styles.container}>
-      <Pressable>
-        <Text style={styles.textStyle}> Buy </Text>  
+      <Pressable
+        onPress={onPress}
+      >
+        <Text style={styles.textStyle}> {children} </Text>  
       </Pressable>
     </View>
 

@@ -1,4 +1,6 @@
 import { View,Text,Pressable,StyleSheet } from "react-native";
+import UI_COLORS from "../../../../constants/uiColors";
+
 // Using 'Props' keyword for onPress
 //'Props' keyword can not use when I am Using children
 function DescriptionBtn({children, onPress}){
@@ -20,7 +22,7 @@ const styles= StyleSheet.create({
     padding:8,
     margin:15,
     borderRadius:20,
-    backgroundColor:'black',
+    backgroundColor:UI_COLORS.DESCRIPTION_BTN_BACKGROUND,
   },
   textStyle:{
     color:'white',

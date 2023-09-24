@@ -1,6 +1,8 @@
 import { View,StyleSheet,Text, FlatList,SafeAreaView,Platform } from "react-native";
 import { PRODUCTS } from "../data/dummy-data";
 import ProductRowTile from "../components/cardviews/product-item/ProductRowTile";
+import UI_COLORS from "../constants/uiColors";
+
 
 //Function renders a product item and takes PRODUCTS data as a parameter :)
 function renderProductItem(itemData){
@@ -39,7 +41,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   textContainer: {
-    backgroundColor:'red',
+    backgroundColor:UI_COLORS.PRODUCT_LIST_HEADER_BACKGROUND,
     padding:10,
     marginTop:Platform.select({ios:0,android:40}), //Using Platform API
     marginBottom:10,
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
 
   text: {
     textAlign: 'center',
-    color: 'black',
+    color: 'white',
     fontSize:18,
   }
 

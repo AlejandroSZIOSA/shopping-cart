@@ -1,6 +1,8 @@
 import { View,Text,StyleSheet, Button} from "react-native";
 import DescriptionBtn from "./btn/DescriptionBtn";
 import BuyBtn from "./btn/BuyBtn";
+import UI_COLORS from "../../../constants/uiColors";
+
 // Props keyword helps :)
 function ProductRowTile(props) {
 
@@ -38,7 +40,7 @@ const styles = StyleSheet.create({
     height:200,
     width:350,
     borderRadius:10,
-    backgroundColor:'blue'
+    backgroundColor:UI_COLORS.CARD_VIEW_PRODUCT_BACKGROUND,
     },
     productNameContainer: {
       padding:5,

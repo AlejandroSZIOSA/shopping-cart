@@ -1,4 +1,5 @@
 import { Pressable, StyleSheet, View,Text } from "react-native";
+import UI_COLORS from "../../../../constants/uiColors";
 
 function BuyBtn({children,onPress}){
   return(
@@ -19,7 +20,7 @@ const styles= StyleSheet.create({
     padding:8,
     //margin:10,
     borderRadius:10,
-    backgroundColor: "green",
+    backgroundColor: UI_COLORS.BUY_BTN_BACKGROUND,
   },
   textStyle:{
     color:'white',

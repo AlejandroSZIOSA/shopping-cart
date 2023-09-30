@@ -1,18 +1,18 @@
 import { NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack'
-import ShoppingScreen from '../../screens/ShoppingScreen';
+import ProductsScreen from '../../screens/ProductsScreen';
 
-const DescriptionStack = createStackNavigator();
+const ProductDescriptionStack = createStackNavigator();
 
 export const ProductListStackScreens =() => (  
   <NavigationContainer>
-    <DescriptionStack.Navigator>
+    <ProductDescriptionStack.Navigator>
 
-      <DescriptionStack.Screen 
+      <ProductDescriptionStack.Screen 
         name= "ProductList"   
-        component={ShoppingScreen}
+        component={ProductsScreen}
       />
 
-    </DescriptionStack.Navigator>
+    </ProductDescriptionStack.Navigator>
   </NavigationContainer>
 )

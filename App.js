@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View} from 'react-native';
-import ShoppingScreen from './src/screens/ShoppingScreen';
+import ShoppingScreen from './src/screens/ProductsScreen';
 
 //import { ProductDescriptionStack } from './src/navigation/stacks/ProductDescriptionStack';
 

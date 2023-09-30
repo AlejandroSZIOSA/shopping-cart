@@ -15,7 +15,7 @@ function renderProductItem(itemData){
   )
 }
 
-function ShoppingScreen(){
+function ProductsScreen(){
   return( 
     <SafeAreaView style={styles.containerSafeAreas}>
       <View>
@@ -34,7 +34,7 @@ function ShoppingScreen(){
     </SafeAreaView>
   );
 }
-export default ShoppingScreen;
+export default ProductsScreen;
 
 const styles = StyleSheet.create({
   containerSafeAreas: {

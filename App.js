@@ -3,6 +3,9 @@ import { StyleSheet, Text, View} from 'react-native';
 import ShoppingScreen from './src/screens/ShoppingScreen';
 import ShoppingCartScreen from './src/screens/ShoppingCartScreen';
 
+import { NavigationContainer } from '@react-navigation/native';
+
+
 import UI_COLORS from './src/constants/uiColors';
 
 // file structure 2
@@ -10,7 +13,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style='dark' />
-      <ShoppingScreen/>
+      <NavigationContainer>
+        <ShoppingScreen/>
+      </NavigationContainer>
     </View>
   );
 }

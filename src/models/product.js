@@ -1,6 +1,7 @@
 //Using Creation Pattern
 class Product{
-  constructor(name, description,price, buyAmount){
+  constructor(id,name,description,price,buyAmount){
+    this.id = id;
     this.name = name;
     this.description = description;
     this.price = price;

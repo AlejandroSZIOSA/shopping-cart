@@ -9,7 +9,7 @@ function ProductsScreen({navigation}){
       
       // Navigate between Stacks SC
       function pressHandler(){
-        navigation.navigate('Description');
+        navigation.navigate('Description',{productId:itemData.item.id} );
       }
 
       return (

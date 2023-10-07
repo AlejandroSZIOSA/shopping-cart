@@ -17,12 +17,10 @@ export const ProductListStackScreens =() => (
       contentStyle:{ backgroundColor:'black'},
     }}
     >
-
       <ProductDescriptionStack.Screen name= "Product List"   component={ProductsScreen}/>
 
       {/* register Description Screen to Navigation */}
-      <ProductDescriptionStack.Screen name= "ProductDescription"  component={DescriptionScreen}/>
-
+      <ProductDescriptionStack.Screen name= "Description"  component={DescriptionScreen}/>
 
     </ProductDescriptionStack.Navigator>
   </NavigationContainer>

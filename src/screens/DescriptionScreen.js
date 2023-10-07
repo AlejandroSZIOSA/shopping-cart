@@ -1,4 +1,6 @@
 import { StyleSheet, View,Text } from "react-native";
+import { PRODUCTS } from "../data/dummy-data";
+
 function DescriptionScreen(){
   return (
     <View style={styles.container}> 

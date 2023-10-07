@@ -6,10 +6,7 @@ import UI_COLORS from "../../../constants/uiColors";
 // Props keyword helps :)
 function ProductRowTile(props) {
 
-  function onPressedDescription() {
-    console.log("Description Btn")
-  }
-  function onPressedBuy() {
+  function testOnPressedBuyBtn() {
     console.log("Buy Btn")
   }
 
@@ -22,9 +19,9 @@ function ProductRowTile(props) {
         <Text style={styles.productPriceText}> Price =  {props.price} SEK </Text>
       </View>
         {/* Using 'props' onPress keyword */}
-        <DescriptionBtn onPress={onPressedDescription}> Description </DescriptionBtn>
+        <DescriptionBtn onPress={props.onPress}> Description </DescriptionBtn>
       <View>
-        <BuyBtn onPress={onPressedBuy}> Buy </BuyBtn>
+        <BuyBtn onPress={testOnPressedBuyBtn}> Buy </BuyBtn>
       </View>
     </View>
   );

@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack'
 import ProductsScreen from '../../screens/ProductsScreen';
+import DescriptionScreen from '../../screens/DescriptionScreen';
 
 //Create an Obj type Navigation-Stack
 const ProductDescriptionStack = createStackNavigator();
@@ -17,10 +18,11 @@ export const ProductListStackScreens =() => (
     }}
     >
 
-      <ProductDescriptionStack.Screen 
-        name= "Product List"   
-        component={ProductsScreen}
-      />
+      <ProductDescriptionStack.Screen name= "Product List"   component={ProductsScreen}/>
+
+      {/* register Description Screen to Navigation */}
+      <ProductDescriptionStack.Screen name= "ProductDescription"  component={DescriptionScreen}/>
+
 
     </ProductDescriptionStack.Navigator>
   </NavigationContainer>

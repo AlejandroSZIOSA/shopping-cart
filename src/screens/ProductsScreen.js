@@ -2,18 +2,28 @@ import { StyleSheet, FlatList,SafeAreaView } from "react-native";
 import { PRODUCTS } from "../data/dummy-data";
 import ProductRowTile from "../components/cardviews/product-item/ProductRowTile";
 
-//Function renders a product item and takes PRODUCTS data as a parameter :)
-function renderProductItem (itemData) {
-  //console.log(itemData.)
-  return (
-    <ProductRowTile 
-      name={itemData.item.name} 
-      price={itemData.item.price}
-    />
-  )
-}
 
-function ProductsScreen(){
+
+//Destructive
+function ProductsScreen({navigation}){
+
+    //Function renders a product item and takes PRODUCTS data as a parameter :)
+  function renderProductItem (itemData) {
+    //console.log(itemData.)
+
+    function pressHandler(){
+      navigation.navigate('ProductDescription');
+    }
+
+    return (
+      <ProductRowTile 
+        name={itemData.item.name} 
+        price={itemData.item.price}
+        onPress={pressHandler}
+      />
+    )
+  }
+
   return( 
     <SafeAreaView style={styles.containerSafeAreas}>
     
